@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #252525;
+    padding: 20px;
+    box-shadow: 0 5px 10px 0 black;
+}
+
+.link-mobile {
+    display: none;
+}
+
+.logo {
+    color: rgb(1, 165, 1);
+    cursor: pointer;
+}
+
+.pesquisa-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.pesquisa-header input {
+    width: 350px;
+    height: 50px;
+    border: none;
+    padding: 0 5px;
+    font-size: 18px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.pesquisa-header input:focus::placeholder {
+    color: transparent;
+}
+
+.pesquisa-header button {
+    height: 50px;
+    width: 130px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+    font-size: 17px;
+    background-color: rgb(1, 165, 1);
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+.pesquisa-header button:hover {
+    background-color: rgb(0, 134, 0);
+}
+
+.produtos-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1.5rem;
+    color: white;
+    font-size: 13px;
+}
+
+.fa-bag-shopping, .fa-user {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-bag-shopping:hover, .fa-user:hover {
+    background-color: rgb(1, 165, 1);
+}
+
+
+.links-rapidos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.links-rapidos a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.links-rapidos a:hover {
+    color: rgb(1, 165, 1);
+    background-color: black;
+}
+
+.banner-promocao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.banner-neymar {
+    border-radius: 50px;
+}
+
+.banner-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.banner-textos button {
+    border: none;
+    background-color: rgb(1, 165, 1);
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+.banner-textos button:hover {
+    background-color: rgb(0, 134, 0);
+}
+
+.prod-destaque {
+    text-align: center;
+    margin-top: 5rem;
+    color: #252525bb;
+}
+
+.cards-div {
+    margin-top: 4rem;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, 350px);
+    padding: 0 40px;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    align-items: center;
+    width: 300px;
+    padding: 30px 20px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 0 3px 0 black;
+}
+
+.card img {
+    cursor: pointer;
+}
+
+.pagamentos-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pg01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.comprar-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.comprar-card button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1.5rem;
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgb(1, 165, 1);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.comprar-card button:hover {
+    background-color: rgb(0, 134, 0);
+}
+
+.comprar-card p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 0.5rem;
+    padding: 0 10px;
+}
+
+
+.card h4{
+    height: 50px;
+}
+
+.promocao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 4rem;
+}
+
+.prom01 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+}
+
+.prom01 h2 {
+    font-size: 42px;
+}
+
+.prom01 span {
+    color: rgb(0, 134, 0);
+}
+
+.prom01 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    gap: 1rem;
+    border: none;
+    background-color: rgb(1, 165, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.prom01 button:hover {
+    background-color: rgb(0, 134, 0);
+}
+
+.prod-mais {
+    text-align: center;
+    margin-top: 5rem;
+    color: #252525bb;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    margin-top: 4rem;
+    background-color: #252525;
+    padding: 20px 0;
+    box-shadow: 0 -3px 6px 0 black;
+}
+
+.ft01 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    color: rgb(1, 165, 1);
+}
+
+.ft01 h2 {
+    font-size: 32px;
+}
+
+.ft01 p {
+    font-size: 20px;
+}
+
+.icons-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.zap, .fa-instagram, .fa-youtube, .fa-discord {
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.zap:hover {
+    color: #25D366;
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+.fa-discord:hover {
+    color: #3638c2;
+}
+
+.ft02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.ft02 p {
+    color: white;
+    font-size: 21px;
+}
+
+.ft02links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.ft02links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.ft02links a:hover {
+    color: rgb(0, 134, 0);
+}
+
+.ft03 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.zap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.ft03 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border: none;
+    background-color: rgb(1, 165, 1);
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    gap: 1rem;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.ft03 button:hover {
+    background-color: rgb(0, 134, 0);
+}
+
+
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburguer span {
+    display: flex;
+    flex-direction: column;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+    margin: 0.3rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.logo-mobile, .bagg, .links-rapidos-mobile {
+    display: none;
+}
+
+.desconto {
+    background-color: #25d3657a;
+}
+
+@media (max-width: 1150px) {
+    header {
+        justify-content: space-between;
+    }
+
+.hamburguer {
+    display: block;
+}
+
+.hamburguer.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburguer.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburguer.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.pesquisa-header, .produtos-header, .logo {
+    display: none;
+}
+
+.logo-mobile {
+    color: rgb(1, 165, 1);
+    display: block;
+}
+
+.bagg {
+    color: rgb(1, 165, 1);
+    font-size: 28px;
+    display: block;
+}
+
+.links-rapidos-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 77px;
+    left: -100%;
+    background-color: #252525;
+    padding: 20px;
+    gap: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.226);
+    border-radius: 0 0 20px 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.links-rapidos {
+    display: none;
+}
+
+.links-rapidos-mobile.active {
+    left: 0;
+}
+
+.links-rapidos-mobile a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.promocao {
+   padding: 0 15px;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.promocao img {
+    width: 90%;
+}
+
+.prom01 {
+    width: 90%;
+}
+
+.banner-neymar {
+    width: 50%;
+    border-radius: 3px;
+}
+
+.banner-promocao {
+   padding: 0 20px;
+   gap: 1rem;
+}
+
+.banner-textos button {
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.ft01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-div {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 100px;
+}
+
+.prom01 h2{
+    font-size: 22px;
+}
+
+.prom01 p {
+    font-size: 18px;
+}
+
+.card h4 {
+    font-size: 15px;
+}
+}
+
+@media (max-width: 318px) {
+    .logo-mobile {
+        font-size: 16px;
+    }
+
+    .banner-textos button{
+        font-size: 10px;
+    }
+
+    .banner-textos p {
+        font-size: 11.5px;
+        font-weight: bold;
+    }
+
+    .comprar-card button {
+      width: 120px;
+      gap: 0;
+      font-size: 13.5px;
+    }
+    .card {
+        width: 70%;
+    }
+
+    .banner-textos h3 {
+        font-size: 12px;
+    }
+
+    .banner-textos h1 {
+        font-size: 20px;
+    }
+
+    .banner-textos p {
+        font-size: 9.8px;
+    }
+
+    .prod-destaque, .prod-mais {
+        font-size: 18px;
+    }
+}
+
+#loader-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #252525;
+}
+
+#loader {
+    width: 90px;
+    height: 90px;
+    border: 6px solid #e5e5e5;
+    border-top-color: rgb(24, 135, 240);
+    border-radius: 50%;
+    animation: giro 1s infinite;
+}
+
+@keyframes giro {
+    to {
+        transform: rotate(1turn);
+    }
+}
